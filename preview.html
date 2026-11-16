@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Margin | Precise</title>
+<link rel="stylesheet" href="web/margin.css">
+<style>
+:root{color-scheme:light dark;--paper:light-dark(#f7f5f0,#191a19);--ink:light-dark(#252b28,#e6e5df);--muted:light-dark(#5d655f,#a9b0a9);--line:light-dark(#d4d8cd,#424941);--accent:light-dark(#335b45,#b2d0af)}
+*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:400 16px/1.65 Margin,monospace;font-synthesis:none}main{max-width:1040px;margin:auto;padding:48px 28px}header{border-bottom:1px solid var(--line);padding-bottom:28px}small,.eyebrow{font-size:12px;color:var(--muted)}h1{font-size:clamp(64px,14vw,128px);line-height:1.1;letter-spacing:-.06em;font-weight:400;margin:20px 0}h2{font-weight:500;font-size:24px;letter-spacing:-.03em}p{max-width:65ch}.top{display:flex;justify-content:space-between;gap:16px}.controls{display:flex;gap:24px;flex-wrap:wrap;padding:24px 0}.controls label{display:grid;gap:6px;font-size:13px}select,input,textarea{font:inherit;color:inherit;background:transparent;border:1px solid var(--line);padding:8px;border-radius:4px}input[type=range]{accent-color:var(--accent);width:180px}textarea{width:100%;resize:vertical;min-height:190px;font-size:32px;line-height:1.5;font-weight:400;padding:20px}.grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin:32px 0}.panel{padding:24px 0;border-top:1px solid var(--line)}.number{font-size:36px;letter-spacing:-.04em;margin:8px 0}.rows{display:grid;gap:0}.row{border-top:1px solid var(--line);padding:18px 0;display:grid;grid-template-columns:160px 1fr;gap:12px}.row span{font-size:12px;color:var(--muted);font-weight:400}.row div{font-size:22px;overflow-wrap:anywhere}.glyphs{overflow-wrap:anywhere;letter-spacing:.08em;font-size:21px}.footer{border-top:1px solid var(--line);padding-top:20px;margin-top:30px;font-size:12px;color:var(--muted)}@media(max-width:600px){main{padding:28px 20px}.grid{grid-template-columns:1fr;gap:0}.row{grid-template-columns:1fr}.top{flex-wrap:wrap}textarea{font-size:24px}.number{font-size:30px}}
+</style>
+<!-- All sample text is generic. Font weight refers only to typographic stroke thickness. -->
+<main>
+<header><div class="top"><span class="eyebrow">A MONOSPACED TYPE FAMILY</span><span class="eyebrow">PRECISE / 1.000</span></div><h1>Margin</h1><p>Room for a different thought.</p><small>Monospaced. Eight weights. Upright and italic.</small></header>
+<div class="controls"><label>Font weight <output id="weight-val">400</output><input id="weight" type="range" min="200" max="900" value="400" step="1"></label><label>Size <output id="size-val">32 px</output><input id="size" type="range" min="12" max="64" value="32"></label><label>Style<select id="style"><option value="normal">Upright</option><option value="italic">Italic</option></select></label></div>
+<textarea id="sample" aria-label="Edit the font specimen" spellcheck="false">The quick brown fox jumps over the lazy dog.
+ABCDEFGHIJKLMNOPQRSTUVWXYZ
+0123456789</textarea>
+<section class="panel"><small>ITALIC SPECIMEN</small><p><em>Sphinx of black quartz, judge my vow.</em></p><p><em>Poco a poco. (Little by little.)</em></p></section>
+<section class="panel"><small>CHARACTER DETAILS</small><p class="glyphs">ABCDEFGHIJKLMNOPQRSTUVWXYZ<br>abcdefghijklmnopqrstuvwxyz<br>0123456789 &amp; @ # % + = /<br>á é í ó ú ü ñ ¿ ¡ £ € $ ¥<br>“Margin” ‘sample’ → ×</p></section>
+<h2>The full family</h2><div class="rows" id="rows"></div>
+<p class="footer">Margin is a customized derivative of Adobe Source Code Pro. Distributed under the SIL Open Font License 1.1. See README.md, NOTICE.txt, and OFL.txt.</p>
+</main>
+<script>
+const sample=document.getElementById('sample');
+for(const id of ['weight','size','style'])document.getElementById(id).addEventListener('input',()=>{sample.style.fontWeight=document.getElementById('weight').value;sample.style.fontSize=document.getElementById('size').value+'px';sample.style.fontStyle=document.getElementById('style').value;document.getElementById('weight-val').value=document.getElementById('weight').value;document.getElementById('size-val').value=document.getElementById('size').value+' px';});
+for(const [weight,name] of [[200,'ExtraLight'],[300,'Light'],[400,'Regular'],[500,'Medium'],[600,'SemiBold'],[700,'Bold'],[800,'ExtraBold'],[900,'Black']])for(const italic of [false,true]){const row=document.createElement('div');row.className='row';const label=document.createElement('span');label.textContent=weight+' / '+name+(italic?' Italic':'');const text=document.createElement('div');text.textContent='A quiet morning. 0123456789';text.style.fontWeight=weight;text.style.fontStyle=italic?'italic':'normal';row.append(label,text);document.getElementById('rows').append(row);}
+</script>
+</html>

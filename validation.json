@@ -1,0 +1,177 @@
+{
+  "version": "1.000",
+  "checks": [
+    "FontTools full table decompilation",
+    "ASCII fixed advance 564 units",
+    "English and Spanish character coverage",
+    "HarfBuzz shaping of TTF files",
+    "FreeType rendering of TTF files",
+    "variable weight range 200-900",
+    "eight named variable instances per file",
+    "intermediate instance 525",
+    "manual visual review of all 16 static styles"
+  ],
+  "browser_check": "Not completed. Chromium launch blocked by environment socket restrictions. Test preview and CSS in the target app.",
+  "fonts": [
+    {
+      "file": "fonts/static/Margin-Black.ttf",
+      "sha256": "1b1472bfb8e8900f4ada6e005d7e68badf1575ea763dc891902df82a457df36a",
+      "glyphs": 1568,
+      "encoded_characters": 1334,
+      "postscript_name": "Margin-Black",
+      "passed": true
+    },
+    {
+      "file": "fonts/static/Margin-BlackItalic.ttf",
+      "sha256": "f0329e7a8d19865ca5c176e0b0c40e8b8c3326324ed22871a08a976f2dd22d18",
+      "glyphs": 1271,
+      "encoded_characters": 1085,
+      "postscript_name": "Margin-BlackItalic",
+      "passed": true
+    },
+    {
+      "file": "fonts/static/Margin-Bold.ttf",
+      "sha256": "08ff8ded860ad897bf0dc04cb4ae897da9c954371b65ffc03a14d6f98e734155",
+      "glyphs": 1568,
+      "encoded_characters": 1334,
+      "postscript_name": "Margin-Bold",
+      "passed": true
+    },
+    {
+      "file": "fonts/static/Margin-BoldItalic.ttf",
+      "sha256": "9def0aa53131d156ecaa86b785c5c8e8ed1658f22e2254366b22a45bb951bef5",
+      "glyphs": 1271,
+      "encoded_characters": 1085,
+      "postscript_name": "Margin-BoldItalic",
+      "passed": true
+    },
+    {
+      "file": "fonts/static/Margin-ExtraBold.ttf",
+      "sha256": "0f570188052fd06da927cb1af7531b9c55057922f9d2b20eb1d4e553f8f5fa49",
+      "glyphs": 1568,
+      "encoded_characters": 1334,
+      "postscript_name": "Margin-ExtraBold",
+      "passed": true
+    },
+    {
+      "file": "fonts/static/Margin-ExtraBoldItalic.ttf",
+      "sha256": "4409ee15df33fafe479c8c600e6009fc70ed85d93dc77dc32085a1fc3dae3647",
+      "glyphs": 1271,
+      "encoded_characters": 1085,
+      "postscript_name": "Margin-ExtraBoldItalic",
+      "passed": true
+    },
+    {
+      "file": "fonts/static/Margin-ExtraLight.ttf",
+      "sha256": "49c79eaea7590d7f53afe6b94d3257e83746771c5eab90117b0a5807eaf249dc",
+      "glyphs": 1568,
+      "encoded_characters": 1334,
+      "postscript_name": "Margin-ExtraLight",
+      "passed": true
+    },
+    {
+      "file": "fonts/static/Margin-ExtraLightItalic.ttf",
+      "sha256": "18a3edc52739b74df6bae57710e554393d0c6c6b622b63d6194af2c41577cf95",
+      "glyphs": 1271,
+      "encoded_characters": 1085,
+      "postscript_name": "Margin-ExtraLightItalic",
+      "passed": true
+    },
+    {
+      "file": "fonts/static/Margin-Italic.ttf",
+      "sha256": "cfe540c96cc77f9ae8c4daa4cfd8aef79008dc62b2e8492b72a13481bc26f6de",
+      "glyphs": 1271,
+      "encoded_characters": 1085,
+      "postscript_name": "Margin-Italic",
+      "passed": true
+    },
+    {
+      "file": "fonts/static/Margin-Light.ttf",
+      "sha256": "078ca9386b80e76808ef0778debe4adae5ec79cc5bc95f811a1e1cd6a763f7bc",
+      "glyphs": 1568,
+      "encoded_characters": 1334,
+      "postscript_name": "Margin-Light",
+      "passed": true
+    },
+    {
+      "file": "fonts/static/Margin-LightItalic.ttf",
+      "sha256": "44b15ba62d380191e42e963e13165e25b5c9763e2d83f6993f90d2a6e424d02b",
+      "glyphs": 1271,
+      "encoded_characters": 1085,
+      "postscript_name": "Margin-LightItalic",
+      "passed": true
+    },
+    {
+      "file": "fonts/static/Margin-Medium.ttf",
+      "sha256": "7d83bff58a1a79987b7ec6e6250f5a04dd6f79e0527efd99b9177d21b348bfb3",
+      "glyphs": 1568,
+      "encoded_characters": 1334,
+      "postscript_name": "Margin-Medium",
+      "passed": true
+    },
+    {
+      "file": "fonts/static/Margin-MediumItalic.ttf",
+      "sha256": "14191aa860435677f1609a09bb749755c12ddbfd2dc17214ff3b29e40421b8ae",
+      "glyphs": 1271,
+      "encoded_characters": 1085,
+      "postscript_name": "Margin-MediumItalic",
+      "passed": true
+    },
+    {
+      "file": "fonts/static/Margin-Regular.ttf",
+      "sha256": "7c275011d91a9a57981f0f17706bd0398c82c4bcc08f0d9aa9656e2e3cbdff40",
+      "glyphs": 1568,
+      "encoded_characters": 1334,
+      "postscript_name": "Margin-Regular",
+      "passed": true
+    },
+    {
+      "file": "fonts/static/Margin-SemiBold.ttf",
+      "sha256": "e70b2a816681ebd05329e037272958cbf0b2f5454ffe253205b2e0c0cbe56e1a",
+      "glyphs": 1568,
+      "encoded_characters": 1334,
+      "postscript_name": "Margin-SemiBold",
+      "passed": true
+    },
+    {
+      "file": "fonts/static/Margin-SemiBoldItalic.ttf",
+      "sha256": "01cc759bfc9538198cc878ce6dd2d7bd5156e741aa77f20e9536859ea55cf40e",
+      "glyphs": 1271,
+      "encoded_characters": 1085,
+      "postscript_name": "Margin-SemiBoldItalic",
+      "passed": true
+    },
+    {
+      "file": "fonts/variable/Margin-Italic.ttf",
+      "sha256": "22eff6bfc490007f7bc36124c19f411c429b35b793e5a9fa64c1107696f94342",
+      "glyphs": 1271,
+      "encoded_characters": 1085,
+      "postscript_name": "Margin-Italic",
+      "passed": true
+    },
+    {
+      "file": "fonts/variable/Margin-Roman.ttf",
+      "sha256": "8146771648ef6f629537f35b2c672dc66f80b5a0e99d36d1ac3d37d9f918a271",
+      "glyphs": 1568,
+      "encoded_characters": 1334,
+      "postscript_name": "Margin-Regular",
+      "passed": true
+    },
+    {
+      "file": "web/Margin-Italic.woff2",
+      "sha256": "eec70ad5e12c369f92fe80a4183f49419cd1e843d417bb2224502e5780cb9c8d",
+      "glyphs": 1271,
+      "encoded_characters": 1085,
+      "postscript_name": "Margin-Italic",
+      "passed": true
+    },
+    {
+      "file": "web/Margin-Roman.woff2",
+      "sha256": "91b58418cabae905da07a926426e1c502fe2081083d74d2a533b1dba338d8339",
+      "glyphs": 1568,
+      "encoded_characters": 1334,
+      "postscript_name": "Margin-Regular",
+      "passed": true
+    }
+  ]
+}
